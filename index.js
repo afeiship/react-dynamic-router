@@ -1,5 +1,4 @@
 var React = require('react');
-var ADMIN_PATH = 'admin/';
 var JS = '.js';
 
 module.exports = React.createClass({
@@ -16,7 +15,7 @@ module.exports = React.createClass({
   },
   render: function () {
     var pathname = this.props.location.pathname;
-    var component = require(ADMIN_PATH + pathname.slice(7) + JS).default;
+    var component = require('admin/' + pathname.slice(7) + JS).default;
     return React.createElement(component, this.props);
   }
 })
