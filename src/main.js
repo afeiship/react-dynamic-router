@@ -1,2 +1,2 @@
-import ReactRouterConfig from 'components/react-router-config';
+import ReactRouterConfig from 'components/react-dynamic-router';
 export default ReactRouterConfig;

@@ -9,8 +9,8 @@ base.entry = {
 base.output = {
   path: config.build.assetsRoot,
   publicPath: config.build.assetsPublicPath,
-  filename: 'react-router-config.js',
-  library: 'ReactRouterConfig',
+  filename: 'react-dynamic-router.js',
+  library: 'ReactDynamicRouter',
   libraryTarget: 'umd'
 }
 

@@ -3,8 +3,8 @@ import ReactRouterConfig from './main';
 
 /*===example start===*/
 
-// install: npm install afeiship/react-router-config --save
-// import : import ReactRouterConfig from 'react-router-config'
+// install: npm install afeiship/react-dynamic-router --save
+// import : import ReactRouterConfig from 'react-dynamic-router'
 
 class App extends React.Component{
   state = {
@@ -20,7 +20,7 @@ class App extends React.Component{
 
   render(){
     return (
-      <div className="hello-react-router-config">
+      <div className="hello-react-dynamic-router">
         <ReactRouterConfig ref='rc' />
     </div>
     );

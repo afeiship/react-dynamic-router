@@ -1,5 +1,5 @@
-# react-router-config
-> Another react router config.
+# react-dynamic-router
+> Another react dynamic router config.
 
 
 ## properties:
