@@ -4,11 +4,12 @@ var JS = '.js';
 module.exports = React.createClass({
   statics: {
     build: function (inRoute, inRoutes) {
-      return inRoutes.map(function(item, index){
+      var self = this;
+      return inRoutes.map(function (item, index) {
         return React.createElement(inRoute, {
           key: index,
           path: item,
-          component: this
+          component: self
         });
       });
     }
