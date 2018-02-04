@@ -33,7 +33,7 @@ export default class extends Component {
     const modules = location.pathname.split('/');
     return createElement(
       require(`${namespace}/${modules[2]}/${modules[3]}.js`).default,
-      {match}
+      { location, match }
     );
   }
 }
