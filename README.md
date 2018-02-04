@@ -30,9 +30,7 @@ module: {
 ## usage:
 ```js
 import ReactDynamicRouter from 'react-dynamic-router';
-import {
-  Route
-} from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 const ROUTES = [
   '/admin/accounts/index',
