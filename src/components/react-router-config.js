@@ -14,11 +14,13 @@ export default class extends Component{
     match:{}
   };
 
-  static buildRoutes(inRoute, inRoutes){
+  static build(inRoute, inRoutes){
     return inRoutes.map((item,index)=>{
-      return (
-        <inRoute key={index} path={item} component={ this } />
-      )
+      return createElement(inRoute,{
+        key: index,
+        path: item,
+        component: this
+      });
     })
   }
   /*===properties end===*/
