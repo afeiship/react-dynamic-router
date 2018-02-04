@@ -1,5 +1,6 @@
 var React = require('react');
 var JS = '.js';
+var SLASH = '/';
 
 module.exports = React.createClass({
   statics: {
@@ -16,7 +17,8 @@ module.exports = React.createClass({
   },
   render: function () {
     var pathname = this.props.location.pathname;
-    var component = require('admin/' + pathname.slice(7) + JS).default;
+    var modules = pathname.split(SLASH);
+    var component = require('admin/' + modules[2] + SLASH + modules[3] + JS).default;
     return React.createElement(component, this.props);
   }
 })
