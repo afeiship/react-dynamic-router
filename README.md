@@ -30,8 +30,17 @@ module: {
 ## usage:
 ```js
 import ReactDynamicRouter from 'react-dynamic-router';
+import {
+  Route
+} from 'react-router-dom';
+
+const ROUTES = [
+  '/admin/accounts/index',
+  '/admin/accounts/add',
+  '/admin/accounts/edit/:id'
+];
 
 <Content className="admin-content-area">
-  { ReactDynamicRouter.build(Route, $config.ROUTER) }
+  { ReactDynamicRouter.build(Route, ROUTES) }
 </Content>
 ```
