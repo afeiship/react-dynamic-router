@@ -1,13 +1,12 @@
 # react-dynamic-router
 > Another react dynamic router config.
 
-
-## properties:
-```javascript
-AUTO_PROPERTIES
+## install:
+```bash
+npm install -S afeiship/react-dynamic-router --registry=https://registry.npm.taobao.org
 ```
 
 ## usage:
-```jsx
-AUTO_USAGE
+```js
+//DOCS here!
 ```
