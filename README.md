@@ -6,7 +6,32 @@
 npm install -S afeiship/react-dynamic-router --registry=https://registry.npm.taobao.org
 ```
 
+## confirguation:
+```js
+resolve: {
+  alias:{
+    admin: resolve(__dirname, '../src/admin')
+  }
+},
+module: {
+  rules: [
+    {
+      test: /\.(js|jsx)$/,
+      use: ['babel-loader'],
+      include: [
+        resolve(__dirname, "../src"),
+        resolve(__dirname, "../node_modules/react-dynamic-router")
+      ]
+    },
+  ]
+}
+```
+
 ## usage:
 ```js
-//DOCS here!
+import ReactDynamicRouter from 'react-dynamic-router';
+
+<Content className="admin-content-area">
+  { ReactDynamicRouter.build(Route, $config.ROUTER) }
+</Content>
 ```
