@@ -3,7 +3,7 @@ var createReactClass = require('create-react-class');
 var JS = '.js';
 var SLASH = '/';
 
-module.exports = reactCreateClass({
+module.exports = createReactClass({
   statics: {
     build: function (inRoute, inRoutes) {
       var self = this;
