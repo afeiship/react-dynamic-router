@@ -1,8 +1,9 @@
 var React = require('react');
+var createReactClass = require('create-react-class');
 var JS = '.js';
 var SLASH = '/';
 
-module.exports = React.createClass({
+module.exports = reactCreateClass({
   statics: {
     build: function (inRoute, inRoutes) {
       var self = this;
